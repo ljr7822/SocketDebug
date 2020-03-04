@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="mainColor">#FF29C9BB</color>
+    <color name="mainColorH">#29C9BB</color>
+    <color name="lineColor">#c3c3c3</color>
+    <color name="itemColorH">#DEE1E6</color>
+    <color name="titleColor">#333333</color>
+    <color name="infoColorH">#888888</color>
+    <color name="recyclerColor">#d8e0e8</color>
+</resources>

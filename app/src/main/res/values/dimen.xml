@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">20dp</dimen>
+    <dimen name="marginSize">5dp</dimen>
+    <dimen name="sendMarginSize">10dp</dimen>
+    <dimen name="inputTitleSize">15dp</dimen>
+    <dimen name="hintSize">13dp</dimen>
+    <dimen name="itemFontSize">18dp</dimen>
+    <dimen name="btnHeight">12dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="inputViewHeight">44dp</dimen>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/itemColorH"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/mainColor">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP/域名"
+            android:textSize="@dimen/hintSize"
+            android:layout_marginRight="@dimen/marginSize"/>
+        <EditText
+            android:id="@+id/IPEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入域名"
+            android:textSize="@dimen/hintSize"
+            android:layout_marginRight="@dimen/marginSize"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="端口"
+            android:textSize="@dimen/hintSize"
+            android:layout_marginRight="@dimen/marginSize"/>
+        <EditText
+            android:id="@+id/portEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入端口号"
+            android:textSize="@dimen/hintSize"
+            android:layout_marginRight="@dimen/marginSize"/>
+
+        <Button
+            android:id="@+id/Button_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/mainColor"
+            android:onClick="link"
+            android:text="连接服务器" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.socketdebug.InputView
+            android:id="@+id/dataEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSize"
+            android:layout_weight="1"
+            app:input_hint="输入要发送的内容">
+        </com.example.socketdebug.InputView>
+
+        <ImageView
+            android:id="@+id/IvSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/sendMarginSize"
+            android:src="@mipmap/send" /><!-- textAllCaps="false"表示关掉文本字母全部大写方法 -->
+    </LinearLayout>
+</LinearLayout>
