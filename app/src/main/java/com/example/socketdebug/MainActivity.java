@@ -114,6 +114,10 @@ public class MainActivity extends BaseActivity {
             if (buttontitle == true){
                 //如果按钮没有被按下，则按钮状态改为按下
                 buttontitle = false;
+                iptoedit.setFocusable(false);// 输入框不可编辑
+                porttoedit.setFocusable(false);
+                iptoedit.setFocusableInTouchMode(false);
+                porttoedit.setFocusableInTouchMode(false);
                 //读数据线程可以执行
                 RD = true;
                 //并创建一个新的线程，用于初始化socket
@@ -132,6 +136,10 @@ public class MainActivity extends BaseActivity {
                                 //如果按钮已经被按下，则改变按钮标题
                                 mPrompt.setToast(getApplicationContext(), "已断开连接");
                                 Button.setText("连 接 服 务 器");
+                                iptoedit.setFocusable(true);// 输入框不可编辑
+                                porttoedit.setFocusable(true);
+                                iptoedit.setFocusableInTouchMode(true);
+                                porttoedit.setFocusableInTouchMode(true);
                                 //储存状态的变量反转
                                 buttontitle = true;
                                 try{
